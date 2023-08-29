@@ -1,8 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import App from './App';
-import { MemoryRouter } from 'react-router';
+import { MemoryRouter } from 'react-router-dom';
+import App from '../src/App';
 
 describe('App', () => {
   it('renders learn react link', () => {
