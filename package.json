@@ -1,5 +1,5 @@
 {
-  "name": "wvr-vite-strapi-boilerplate",
+  "name": "wvr-vite-boilerplate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -23,6 +23,22 @@
     "tailwindwatch": "tailwindcss -i ./src/index.css -o ./dist/index.css --watch --minify",
     "typecheck": "tsc --noEmit"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wandercap/wvr-vite-boilerplate.git"
+  },
+  "keywords": [
+    "Vite",
+    "React",
+    "Tailwind",
+    "Boilerplate"
+  ],
+  "author": "Wanderlan Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wandercap/wvr-vite-boilerplate/issues"
+  },
+  "homepage": "https://github.com/wandercap/wvr-vite-boilerplate#readme",
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -34,7 +50,6 @@
     "@testing-library/react": "14.0.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "@types/testing-library__jest-dom": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "6.5.0",
     "@typescript-eslint/parser": "6.5.0",
     "@vitejs/plugin-react": "4.0.4",
