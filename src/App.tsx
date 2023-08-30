@@ -1,8 +1,8 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import Home from './views/Home';
+import NotFound from './views/NotFound';
 
-function App() {
+export function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -11,12 +11,10 @@ function App() {
   );
 }
 
-function WrappedApp() {
+export function WrappedApp() {
   return (
     <HashRouter>
       <App />
     </HashRouter>
   );
 }
-
-export default WrappedApp;

@@ -1,11 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import App from '../src/App';
+import { App, WrappedApp } from '../src/App';
 
 describe('App', () => {
-  it('renders learn react link', () => {
-    render(<App />);
+  it('render home page', () => {
+    render(<WrappedApp />);
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
       'Hello, world!'
     );
@@ -13,13 +13,13 @@ describe('App', () => {
 
   it('renders 404 page', () => {
     render(
-      <MemoryRouter initialEntries={['/404']}>
+      <MemoryRouter initialEntries={['/test']}>
         <App />
       </MemoryRouter>
     );
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      'Not found'
+      '404: Page not found'
     );
   });
 });
